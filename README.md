@@ -18,4 +18,4 @@
 
 ## Demo代码
 
-- 我简化的[CommonCollections6](deserialization/src/java/com/govuln/CommonsCollections6.java)，更方便大家理解
+- 我简化的[CommonCollections6](deserialization/src/main/java/com/govuln/CommonsCollections6.java)，更方便大家理解
