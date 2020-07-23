@@ -15,6 +15,7 @@
 - [Java安全漫谈 - 09.反序列化篇(3)](https://t.zsxq.com/BmIIAy3)
 - [Java安全漫谈 - 10.反序列化篇(4)](https://t.zsxq.com/ZNZrJMZ)
 - [Java安全漫谈 - 11.反序列化篇(5)](https://t.zsxq.com/FufUf2B)
+- [Java安全漫谈 - 12.反序列化篇(6)](https://t.zsxq.com/A2j2beE)
 
 ## Demo代码
 
