@@ -20,3 +20,6 @@
 ## Demo代码
 
 - 我简化的[CommonCollections6](deserialization/src/main/java/com/govuln/CommonsCollections6.java)，更方便大家理解
+- 远程字节码加载Demo：[HelloClassLoader](general/src/main/java/com/govuln/HelloClassLoader.java)
+- 系统默认defineClass加载字节码Demo：[HelloDefineClass](general/src/main/java/com/govuln/HelloDefineClass.java)
+- 使用TemplatesImpl加载字节码Demo：[HelloTemplatesImpl](general/src/main/java/com/govuln/HelloTemplatesImpl.java)
