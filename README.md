@@ -16,7 +16,7 @@
 - [Java安全漫谈 - 10.用TransformedMap编写真正的POC](https://t.zsxq.com/ZNZrJMZ)
 - [Java安全漫谈 - 11.LazyMap详解](https://t.zsxq.com/FufUf2B)
 - [Java安全漫谈 - 12.简化版CommonsCollections6](https://t.zsxq.com/A2j2beE)
-- [Java安全漫谈 - 番外篇1. BCEL ClassLoader去哪了？](https://mp.weixin.qq.com/s/TBSlxuxhdvHZrJVPObiRYQ)
+- [Java安全漫谈 - 番外篇1. BCEL ClassLoader去哪了？](https://www.leavesongs.com/PENETRATION/where-is-bcel-classloader.html)
 
 ## Demo代码
 
