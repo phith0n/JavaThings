@@ -17,6 +17,7 @@
 - [Java安全漫谈 - 11.LazyMap详解](https://t.zsxq.com/FufUf2B)
 - [Java安全漫谈 - 12.简化版CommonsCollections6](https://t.zsxq.com/A2j2beE)
 - [Java安全漫谈 - 番外篇1. BCEL ClassLoader去哪了？](https://www.leavesongs.com/PENETRATION/where-is-bcel-classloader.html)
+- [Java安全漫谈 - 13.Java中动态加载字节码的那些方法](https://t.zsxq.com/E2VfUVB)
 
 ## Demo代码
 
@@ -24,3 +25,4 @@
 - 远程字节码加载Demo：[HelloClassLoader](general/src/main/java/com/govuln/HelloClassLoader.java)
 - 系统默认defineClass加载字节码Demo：[HelloDefineClass](general/src/main/java/com/govuln/HelloDefineClass.java)
 - 使用TemplatesImpl加载字节码Demo：[HelloTemplatesImpl](general/src/main/java/com/govuln/HelloTemplatesImpl.java)
+- 使用BCEL加载字节码Demo：[HelloBCEL](general/src/main/java/com/govuln/HelloBCEL.java)
