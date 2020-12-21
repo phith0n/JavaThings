@@ -31,8 +31,8 @@
 
 反序列化：
 
-- 最简单的Transformer Demo：[CommonsCollectionsIntro.java](general/src/main/java/com/govuln/bytes/CommonsCollectionsIntro.java)
+- 最简单的Transformer Demo：[CommonsCollectionsIntro.java](general/src/main/java/com/govuln/deserialization/CommonsCollectionsIntro.java)
 - 我简化的[CommonsCollections6](general/src/main/java/com/govuln/deserialization/CommonsCollections6.java)，更方便大家理解
-- 利用TemplatesImpl构造的Transformer Demo：[CommonsCollectionsIntro2.java](general/src/main/java/com/govuln/bytes/CommonsCollectionsIntro2.java)
-- 无InvokerTransformer的Transformer Demo：[CommonsCollectionsIntro3.java](general/src/main/java/com/govuln/bytes/CommonsCollectionsIntro3.java)
+- 利用TemplatesImpl构造的Transformer Demo：[CommonsCollectionsIntro2.java](general/src/main/java/com/govuln/deserialization/CommonsCollectionsIntro2.java)
+- 无InvokerTransformer的Transformer Demo：[CommonsCollectionsIntro3.java](general/src/main/java/com/govuln/deserialization/CommonsCollectionsIntro3.java)
 - 我简化的[CommonsCollections3](general/src/main/java/com/govuln/deserialization/CommonsCollections3.java)
