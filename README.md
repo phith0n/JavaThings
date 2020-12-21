@@ -18,11 +18,21 @@
 - [Java安全漫谈 - 12.简化版CommonsCollections6](https://t.zsxq.com/A2j2beE)
 - [Java安全漫谈 - 番外篇1. BCEL ClassLoader去哪了？](https://www.leavesongs.com/PENETRATION/where-is-bcel-classloader.html)
 - [Java安全漫谈 - 13.Java中动态加载字节码的那些方法](https://t.zsxq.com/E2VfUVB)
+- Java安全漫谈 - 14.认识CommonsCollections3
 
 ## Demo代码
 
-- 我简化的[CommonCollections6](deserialization/src/main/java/com/govuln/CommonsCollections6.java)，更方便大家理解
-- 远程字节码加载Demo：[HelloClassLoader](general/src/main/java/com/govuln/HelloClassLoader.java)
-- 系统默认defineClass加载字节码Demo：[HelloDefineClass](general/src/main/java/com/govuln/HelloDefineClass.java)
-- 使用TemplatesImpl加载字节码Demo：[HelloTemplatesImpl](general/src/main/java/com/govuln/HelloTemplatesImpl.java)
-- 使用BCEL加载字节码Demo：[HelloBCEL](general/src/main/java/com/govuln/HelloBCEL.java)
+字节码：
+
+- 远程字节码加载Demo：[HelloClassLoader](general/src/main/java/com/govuln/bytes/HelloClassLoader.java)
+- 系统默认defineClass加载字节码Demo：[HelloDefineClass](general/src/main/java/com/govuln/bytes/HelloDefineClass.java)
+- 使用TemplatesImpl加载字节码Demo：[HelloTemplatesImpl](general/src/main/java/com/govuln/bytes/HelloTemplatesImpl.java)
+- 使用BCEL加载字节码Demo：[HelloBCEL](general/src/main/java/com/govuln/bytes/HelloBCEL.java)
+
+反序列化：
+
+- 最简单的Transformer Demo：[CommonsCollectionsIntro.java](general/src/main/java/com/govuln/bytes/CommonsCollectionsIntro.java)
+- 我简化的[CommonsCollections6](general/src/main/java/com/govuln/deserialization/CommonsCollections6.java)，更方便大家理解
+- 利用TemplatesImpl构造的Transformer Demo：[CommonsCollectionsIntro2.java](general/src/main/java/com/govuln/bytes/CommonsCollectionsIntro2.java)
+- 无InvokerTransformer的Transformer Demo：[CommonsCollectionsIntro3.java](general/src/main/java/com/govuln/bytes/CommonsCollectionsIntro3.java)
+- 我简化的[CommonsCollections3](general/src/main/java/com/govuln/deserialization/CommonsCollections3.java)

@@ -9,7 +9,7 @@ import org.apache.commons.collections.map.TransformedMap;
 import java.util.HashMap;
 import java.util.Map;
 
-public class CommonCollectionsIntro {
+public class CommonsCollectionsIntro {
     public static void main(String[] args) throws Exception {
         Transformer[] transformers = new Transformer[]{
             new ConstantTransformer(Runtime.getRuntime()),
