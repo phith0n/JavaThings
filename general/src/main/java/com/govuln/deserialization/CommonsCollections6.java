@@ -1,4 +1,4 @@
-package com.govuln;
+package com.govuln.deserialization;
 
 import org.apache.commons.collections.Transformer;
 import org.apache.commons.collections.functors.ChainedTransformer;

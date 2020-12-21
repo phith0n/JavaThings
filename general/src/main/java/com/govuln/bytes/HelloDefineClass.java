@@ -1,4 +1,4 @@
-package com.govuln;
+package com.govuln.bytes;
 
 import java.lang.reflect.Method;
 import java.util.Base64;

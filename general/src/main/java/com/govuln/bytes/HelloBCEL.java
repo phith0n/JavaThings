@@ -1,4 +1,4 @@
-package com.govuln;
+package com.govuln.bytes;
 
 import com.sun.org.apache.bcel.internal.classfile.JavaClass;
 import com.sun.org.apache.bcel.internal.classfile.Utility;

@@ -1,4 +1,4 @@
-package com.govuln;
+package com.govuln.bytes;
 
 import java.net.URL;
 import java.net.URLClassLoader;
