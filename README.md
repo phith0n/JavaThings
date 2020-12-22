@@ -36,3 +36,4 @@
 - 利用TemplatesImpl构造的Transformer Demo：[CommonsCollectionsIntro2.java](general/src/main/java/com/govuln/deserialization/CommonsCollectionsIntro2.java)
 - 无InvokerTransformer的Transformer Demo：[CommonsCollectionsIntro3.java](general/src/main/java/com/govuln/deserialization/CommonsCollectionsIntro3.java)
 - 我简化的[CommonsCollections3](general/src/main/java/com/govuln/deserialization/CommonsCollections3.java)
+- CommonsCollections6一次执行多个命令：[CommonsCollections6Multiple](general/src/main/java/com/govuln/deserialization/CommonsCollections6Multiple.java)

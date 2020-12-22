@@ -59,7 +59,7 @@ public class CommonsCollections6Multiple {
         oos.close();
 
         // 本地测试触发
-         System.out.println(barr);
+        System.out.println(barr);
         ObjectInputStream ois = new ObjectInputStream(new ByteArrayInputStream(barr.toByteArray()));
         Object o = (Object)ois.readObject();
     }
