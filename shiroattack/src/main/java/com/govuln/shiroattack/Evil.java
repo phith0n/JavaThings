@@ -1,4 +1,4 @@
-package org.vulhub.shiroattack;
+package com.govuln.shiroattack;
 
 import com.sun.org.apache.xalan.internal.xsltc.DOM;
 import com.sun.org.apache.xalan.internal.xsltc.TransletException;

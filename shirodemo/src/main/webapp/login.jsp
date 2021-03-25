@@ -1,3 +1,4 @@
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <!doctype html>
 <html lang="en">
 <head>
@@ -67,18 +68,18 @@
     </style>
 </head>
 <body class="text-center">
-    <form class="form-signin" action="/doLogin" method="post">
-        <h1 class="h3 mb-3 font-weight-normal">Please sign in</h1>
-        <label class="sr-only">Username</label>
-        <input type="text" class="form-control" placeholder="Username" name="username" required>
-        <label class="sr-only">Password</label>
-        <input type="password" class="form-control" placeholder="Password" name="password" required>
-        <div class="checkbox mb-3">
-            <label>
-                <input type="checkbox" name="rememberme" value="remember-me"> Remember me
-            </label>
-        </div>
-        <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
-    </form>
+<form class="form-signin" method="post">
+    <h1 class="h3 mb-3 font-weight-normal">Please sign in</h1>
+    <label class="sr-only">Username</label>
+    <input type="text" class="form-control" placeholder="Username" name="username" required>
+    <label class="sr-only">Password</label>
+    <input type="password" class="form-control" placeholder="Password" name="password" required>
+    <div class="checkbox mb-3">
+        <label>
+            <input type="checkbox" name="rememberMe"> Remember me
+        </label>
+    </div>
+    <button class="btn btn-lg btn-primary btn-block" type="submit" name="submit" value="Login">Sign in</button>
+</form>
 </body>
 </html>
