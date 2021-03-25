@@ -37,3 +37,9 @@
 - 无InvokerTransformer的Transformer Demo：[CommonsCollectionsIntro3.java](general/src/main/java/com/govuln/deserialization/CommonsCollectionsIntro3.java)
 - 我简化的[CommonsCollections3](general/src/main/java/com/govuln/deserialization/CommonsCollections3.java)
 - CommonsCollections6一次执行多个命令：[CommonsCollections6Multiple](general/src/main/java/com/govuln/deserialization/CommonsCollections6Multiple.java)
+
+Shiro反序列化：
+
+- 一个最简单的Shiro Web应用：[shirodemo](shirodemo/)
+- 使用CommonsCollections6与Shiro默认Key构造Payload：[Client0.java](shiroattack/src/main/java/com/govuln/shiroattack/Client0.java)，在Tomcat中可能会无法成功反序列化
+- 使用CommonsCollections、TemplatesImpl与Shiro默认Key构造Payload：[Client.java](shiroattack/src/main/java/com/govuln/shiroattack/Client.java)，解决上述问题
