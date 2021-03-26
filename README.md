@@ -19,6 +19,7 @@
 - [Java安全漫谈 - 番外篇1. BCEL ClassLoader去哪了？](https://www.leavesongs.com/PENETRATION/where-is-bcel-classloader.html)
 - [Java安全漫谈 - 13.Java中动态加载字节码的那些方法](https://t.zsxq.com/E2VfUVB)
 - [Java安全漫谈 - 14.为什么需要CommonsCollections3](https://t.zsxq.com/i6Y7QN7)
+- [ Java安全漫谈 - 15.TemplatesImpl在Shiro中的利用](https://t.zsxq.com/JAUBmMz)
 
 ## Demo代码
 
