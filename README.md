@@ -38,6 +38,7 @@
 - 无InvokerTransformer的Transformer Demo：[CommonsCollectionsIntro3.java](general/src/main/java/com/govuln/deserialization/CommonsCollectionsIntro3.java)
 - 我简化的[CommonsCollections3](general/src/main/java/com/govuln/deserialization/CommonsCollections3.java)
 - CommonsCollections6一次执行多个命令：[CommonsCollections6Multiple](general/src/main/java/com/govuln/deserialization/CommonsCollections6Multiple.java)
+- 支持commons-collections4.0版本的CommonsCollections6利用链：[CommonsCollections6For4](general/src/main/java/com/govuln/deserialization/CommonsCollections6For4.java)
 
 Shiro反序列化：
 
