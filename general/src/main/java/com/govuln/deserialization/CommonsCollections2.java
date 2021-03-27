@@ -37,7 +37,7 @@ public class CommonsCollections2 {
 
         Comparator comparator = new TransformingComparator(transformerChain);
 
-        final PriorityQueue queue = new PriorityQueue(2, comparator);
+        PriorityQueue queue = new PriorityQueue(2, comparator);
         queue.add(1);
         queue.add(2);
 
