@@ -31,6 +31,12 @@
       <artifactId>commons-collections4</artifactId>
       <version>4.0</version>
     </dependency>
+    <!-- https://mvnrepository.com/artifact/javassist/javassist -->
+    <dependency>
+      <groupId>javassist</groupId>
+      <artifactId>javassist</artifactId>
+      <version>3.12.1.GA</version>
+    </dependency>
   </dependencies>
 
   <build>
@@ -49,6 +55,7 @@
         <plugin>
           <artifactId>maven-compiler-plugin</artifactId>
           <version>3.8.0</version>
+
         </plugin>
         <plugin>
           <artifactId>maven-surefire-plugin</artifactId>
