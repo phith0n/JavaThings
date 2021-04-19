@@ -21,6 +21,7 @@
 - [Java安全漫谈 - 14.为什么需要CommonsCollections3](https://t.zsxq.com/i6Y7QN7)
 - [Java安全漫谈 - 15.TemplatesImpl在Shiro中的利用](https://t.zsxq.com/JAUBmMz)
 - [Java安全漫谈 - 16.commons-collections4与漏洞修复](https://t.zsxq.com/ZBQj2FE)
+- [Java安全漫谈 - 17.CommonsBeanutils与无commons-collections的Shiro反序列化利用](https://t.zsxq.com/IqBmuF6)
 
 ## Demo代码
 
@@ -47,3 +48,4 @@ Shiro反序列化：
 - 一个最简单的Shiro Web应用：[shirodemo](shirodemo/)
 - 使用CommonsCollections6与Shiro默认Key构造Payload：[Client0.java](shiroattack/src/main/java/com/govuln/shiroattack/Client0.java)、[CommonsCollections6.java](shiroattack/src/main/java/com/govuln/shiroattack/CommonsCollections6.java)，在Tomcat中可能会无法成功反序列化
 - 使用CommonsCollections、TemplatesImpl与Shiro默认Key构造Payload：[Client.java](shiroattack/src/main/java/com/govuln/shiroattack/Client.java)、[CommonsCollectionsShiro.java](shiroattack/src/main/java/com/govuln/shiroattack/CommonsCollectionsShiro.java)，解决上述问题
+- 使用Shiro默认自带的commons-beanutils构造的反序列化利用链：[CommonsBeanutils1Shiro.java](shiroattack/src/main/java/com/govuln/shiroattack/CommonsBeanutils1Shiro.java)
