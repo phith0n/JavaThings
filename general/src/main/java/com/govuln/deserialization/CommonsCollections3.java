@@ -20,7 +20,6 @@ import java.lang.annotation.Retention;
 import java.lang.reflect.Constructor;
 import java.lang.reflect.Field;
 import java.lang.reflect.InvocationHandler;
-import java.util.Base64;
 import java.util.HashMap;
 import java.util.Map;
 
