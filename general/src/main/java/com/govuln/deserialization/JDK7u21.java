@@ -43,7 +43,7 @@ public class JDK7u21 {
         Templates proxy = (Templates) Proxy.newProxyInstance(JDK7u21.class.getClassLoader(), new Class[]{Templates.class}, tempHandler);
 
         // 实例化HashSet，并将两个对象放进去
-        HashSet set = new HashSet(); // maintain order
+        HashSet set = new LinkedHashSet();
         set.add(templates);
         set.add(proxy);
 
