@@ -4,12 +4,15 @@ import java.io.Serializable;
 
 public class User implements Serializable {
     protected String name;
-    protected Card card;
+    protected User parent;
 
-    public User()
+    public User(String name)
     {
-        this.name = "Bob";
-        this.card = new Card();
+        this.name = name;
     }
 
+    public void setParent(User parent)
+    {
+        this.parent = parent;
+    }
 }

@@ -23,6 +23,7 @@
 - [Java安全漫谈 - 16.commons-collections4与漏洞修复](https://t.zsxq.com/ZBQj2FE)
 - [Java安全漫谈 - 17.CommonsBeanutils与无commons-collections的Shiro反序列化利用](https://t.zsxq.com/IqBmuF6)
 - [Java安全漫谈 - 18.原生反序列化利用链JDK7u21](https://t.zsxq.com/neMbuJa)
+- [Java安全漫谈 - 19.Java反序列化协议构造与分析](https://t.zsxq.com/ZfiEeEY)
 
 ## Demo代码
 
@@ -42,8 +43,8 @@
 - 我简化的[CommonsCollections3](general/src/main/java/com/govuln/deserialization/CommonsCollections3.java)
 - CommonsCollections6一次执行多个命令：[CommonsCollections6Multiple](general/src/main/java/com/govuln/deserialization/CommonsCollections6Multiple.java)
 - 支持commons-collections4.0版本的CommonsCollections6利用链：[CommonsCollections6For4](general/src/main/java/com/govuln/deserialization/CommonsCollections6For4.java)
-- 我简化的CommonsBeanutils1利用链：[CommonsBeanutils1](https://github.com/phith0n/JavaThings/blob/master/general/src/main/java/com/govuln/deserialization/CommonsBeanutils1.java)
-- 简化版Java原生利用链 [JDK7u21](https://github.com/phith0n/JavaThings/blob/master/general/src/main/java/com/govuln/deserialization/JDK7u21.java)
+- 我简化的CommonsBeanutils1利用链：[CommonsBeanutils1](general/src/main/java/com/govuln/deserialization/CommonsBeanutils1.java)
+- 简化版Java原生利用链 [JDK7u21](general/src/main/java/com/govuln/deserialization/JDK7u21.java)
 
 Shiro反序列化：
 
@@ -51,3 +52,8 @@ Shiro反序列化：
 - 使用CommonsCollections6与Shiro默认Key构造Payload：[Client0.java](shiroattack/src/main/java/com/govuln/shiroattack/Client0.java)、[CommonsCollections6.java](shiroattack/src/main/java/com/govuln/shiroattack/CommonsCollections6.java)，在Tomcat中可能会无法成功反序列化
 - 使用CommonsCollections、TemplatesImpl与Shiro默认Key构造Payload：[Client.java](shiroattack/src/main/java/com/govuln/shiroattack/Client.java)、[CommonsCollectionsShiro.java](shiroattack/src/main/java/com/govuln/shiroattack/CommonsCollectionsShiro.java)，解决上述问题
 - 使用Shiro默认自带的commons-beanutils构造的反序列化利用链：[CommonsBeanutils1Shiro.java](shiroattack/src/main/java/com/govuln/shiroattack/CommonsBeanutils1Shiro.java)
+
+自研反序列化分析工具：
+
+- zkar: <https://github.com/phith0n/zkar>
+- 如何使用zkar修复SerialVersionUID不匹配的问题：<https://t.zsxq.com/Yz3B6yJ>
