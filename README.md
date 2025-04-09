@@ -29,22 +29,22 @@
 
 字节码：
 
-- 远程字节码加载Demo：[HelloClassLoader](general/src/main/java/com/govuln/bytes/HelloClassLoader.java)
-- 系统默认defineClass加载字节码Demo：[HelloDefineClass](general/src/main/java/com/govuln/bytes/HelloDefineClass.java)
-- 使用TemplatesImpl加载字节码Demo：[HelloTemplatesImpl](general/src/main/java/com/govuln/bytes/HelloTemplatesImpl.java)
-- 使用BCEL加载字节码Demo：[HelloBCEL](general/src/main/java/com/govuln/bytes/HelloBCEL.java)
+- 远程字节码加载Demo：[HelloClassLoader](jdk8/src/main/java/com/govuln/bytes/HelloClassLoader.java)
+- 系统默认defineClass加载字节码Demo：[HelloDefineClass](jdk8/src/main/java/com/govuln/bytes/HelloDefineClass.java)
+- 使用TemplatesImpl加载字节码Demo：[HelloTemplatesImpl](jdk8/src/main/java/com/govuln/bytes/HelloTemplatesImpl.java)
+- 使用BCEL加载字节码Demo：[HelloBCEL](jdk8/src/main/java/com/govuln/bytes/HelloBCEL.java)
 
 反序列化：
 
-- 最简单的Transformer Demo：[CommonsCollectionsIntro.java](general/src/main/java/com/govuln/deserialization/CommonsCollectionsIntro.java)
-- 我简化的[CommonsCollections6](general/src/main/java/com/govuln/deserialization/CommonsCollections6.java)，更方便大家理解
-- 利用TemplatesImpl构造的Transformer Demo：[CommonsCollectionsIntro2.java](general/src/main/java/com/govuln/deserialization/CommonsCollectionsIntro2.java)
-- 无InvokerTransformer的Transformer Demo：[CommonsCollectionsIntro3.java](general/src/main/java/com/govuln/deserialization/CommonsCollectionsIntro3.java)
-- 我简化的[CommonsCollections3](general/src/main/java/com/govuln/deserialization/CommonsCollections3.java)
-- CommonsCollections6一次执行多个命令：[CommonsCollections6Multiple](general/src/main/java/com/govuln/deserialization/CommonsCollections6Multiple.java)
-- 支持commons-collections4.0版本的CommonsCollections6利用链：[CommonsCollections6For4](general/src/main/java/com/govuln/deserialization/CommonsCollections6For4.java)
-- 我简化的CommonsBeanutils1利用链：[CommonsBeanutils1](general/src/main/java/com/govuln/deserialization/CommonsBeanutils1.java)
-- 简化版Java原生利用链 [JDK7u21](general/src/main/java/com/govuln/deserialization/JDK7u21.java)
+- 最简单的Transformer Demo：[CommonsCollectionsIntro.java](jdk8/src/main/java/com/govuln/deserialization/CommonsCollectionsIntro.java)
+- 我简化的[CommonsCollections6](jdk8/src/main/java/com/govuln/deserialization/CommonsCollections6.java)，更方便大家理解
+- 利用TemplatesImpl构造的Transformer Demo：[CommonsCollectionsIntro2.java](jdk8/src/main/java/com/govuln/deserialization/CommonsCollectionsIntro2.java)
+- 无InvokerTransformer的Transformer Demo：[CommonsCollectionsIntro3.java](jdk8/src/main/java/com/govuln/deserialization/CommonsCollectionsIntro3.java)
+- 我简化的[CommonsCollections3](jdk8/src/main/java/com/govuln/deserialization/CommonsCollections3.java)
+- CommonsCollections6一次执行多个命令：[CommonsCollections6Multiple](jdk8/src/main/java/com/govuln/deserialization/CommonsCollections6Multiple.java)
+- 支持commons-collections4.0版本的CommonsCollections6利用链：[CommonsCollections6For4](jdk8/src/main/java/com/govuln/deserialization/CommonsCollections6For4.java)
+- 我简化的CommonsBeanutils1利用链：[CommonsBeanutils1](jdk8/src/main/java/com/govuln/deserialization/CommonsBeanutils1.java)
+- 简化版Java原生利用链 [JDK7u21](jdk8/src/main/java/com/govuln/deserialization/JDK7u21.java)
 
 Shiro反序列化：
 
